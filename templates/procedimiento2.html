@@ -1,13 +1,13 @@
-<h1> Peliculas del Actor ID: {{actor_id }}</h1>
+<h1> Empleados por Fecha de Nacimiento: {{fecha_inicio }} y {{fecha_fin}}</h1>
 <table border = "1">
   <thead>
+  
   <tr>
-    <th>Codigo Actor </th>
+    <th>Codigo Empleado </th>
     <th>Nombre Completo </th>
-    <th>codigo peliculas </th>
-    <th>nombre pelicuala </th>
-    
+    <th>Fecha de Nacimiento </th>
   </tr>
+  
   </thead>
   
   <tbody>
@@ -16,7 +16,6 @@
     <td>{{row[0]}}</td>
     <td>{{row[1]}}</td>
     <td>{{row[2]}}</td>
-    <td>{{row[3]}}</td>
  
   </tr>
   {%endfor%}
