@@ -1,0 +1,24 @@
+<h1> Peliculas del Actor ID: {{actor_id }}</h1>
+<table border = "1">
+  <thead>
+  <tr>
+    <th>CodigoActor </th>
+    <th>Nombre Completo </th>
+    <th>codigo peliculas </th>
+    <th>nombre pelicuala </th>
+    
+  </tr>
+  </thead>
+  
+  <tbody>
+  {% for row in data%}
+  <tr>
+    <td>{{row[0]}}</td>
+    <td>{{row[1]}}</td>
+    <td>{{row[2]}}</td>
+    <td>{{row[3]}}</td>
+ 
+  </tr>
+  {%endfor%}
+  </tbody>
+  </table>

@@ -1,0 +1,19 @@
+<h1> Tabla {{name }}</h1>
+<table>
+  <thead>
+  <tr>
+    <th>CodigoPelicula </th>
+    <th>titulo </th>
+  </tr>
+  </thead>
+  
+  <tbody>
+  {% for row in data%}
+  <tr>
+    <td>{{row[0]}}</td>
+    <td>{{row[1]}}</td>
+
+  </tr>
+  {%endfor%}
+  </tbody>
+  </table>
